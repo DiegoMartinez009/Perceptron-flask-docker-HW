@@ -27,7 +27,8 @@ Result should display like:
 
 As the image below:
 
-![RTAresult](https://user-images.githubusercontent.com/99198580/171046295-d517a9f0-26c6-4e06-8f1a-caf228ac2bbc.png)
+<img width="722" src="https://user-images.githubusercontent.com/99198580/171046295-d517a9f0-26c6-4e06-8f1a-caf228ac2bbc.png">
+
 
 
 
