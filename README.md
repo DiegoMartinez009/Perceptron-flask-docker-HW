@@ -29,8 +29,7 @@ As the image below:
 
 <img width="722" src="https://user-images.githubusercontent.com/99198580/171046875-643e3021-8695-4672-ab29-7098d075d6df.png">
 
-
-
+Where predicted_class: -1 the predicted class is Iris setosa.
 
 
 
