@@ -18,7 +18,7 @@ This Repository deploys a perceptron sklearn model using Flask and a Docker cont
 
 Paste this URL into your browser bar:
 
-`"http://localhost:3333/api/v1.0/predict?sl=3.5&pl=1.2"`
+`http://localhost:3333/api/v1.0/predict?sl=3.5&pl=1.2`
 
 Result should display like:
 ```
