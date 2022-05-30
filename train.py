@@ -1,12 +1,12 @@
 
-# Load libraries required
+# Load libraries
 from sklearn.datasets import load_iris
 import pickle
 import joblib
 import pandas as pd
 import numpy as np
 
-#Create Perceptron Model
+#Perceptron Model
 class Perceptron: 
     def __init__(self, eta=0.01, n_iter=10):
         self.eta = eta
@@ -26,18 +26,16 @@ class Perceptron:
     def net_input(self, X):
         return np.dot(X, self.w_[1:]) + self.w_[0]
     def predict(self, X):
-        # step function (if net_input is higher than 0, 1st class, otherwise -1 class)
         return np.where(self.net_input(X) >= 0, 1, -1)
 
 model = Perceptron()
 
-# Define XY variables for Perceptron Model
+# Define XY 
 iris = load_iris()
 df = pd.DataFrame(data = np.c_[iris['data'], iris['target']],
                  columns = iris['feature_names']+ ['target']) 
 
-# X: for sepal length, petal length
-# Y: for Target
+# X(sepal length, petal length) Y(Target)
 X, y = df.iloc[:100, [0,2]].values, df.iloc[:100, 4]
 
 # y
@@ -49,13 +47,10 @@ def a(x):
     
 y = y.map(a)
 y = y.values
-
-# Train Perceptron model
+# Train model
 model.fit(X,y)
-
-# Save the trained model as a pickle string.
+# Save the trained model
 saved_model = pickle.dumps(model)
-
 # Save the model as a pickle in a file
 joblib.dump(model, 'model.pkl')
 
