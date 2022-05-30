@@ -25,6 +25,9 @@ Result should display like:
 {"features":[5.2,2.3],"predicted_class":1}
 ```
 
+As the image below:
+
+
 
 
 
