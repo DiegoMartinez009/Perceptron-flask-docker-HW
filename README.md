@@ -18,7 +18,11 @@ This Repository deploys a perceptron sklearn model using Flask and a Docker cont
 
 Paste this URL into your browser bar:
 
-`curl -i "http://localhost:3333/api/v1.0/predict?sl=5.2&pl=2.3"`
+`"http://localhost:3333/api/v1.0/predict?sl=5.2&pl=2.3"`
+
+Result should display like:
+
+{"features":[5.2,2.3],"predicted_class":1}
 
 
 
